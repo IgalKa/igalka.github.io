@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>My Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+	<style>
+		#particles-js {
+			width: 100%;
+			height: 100%;
+		}
+
+		#main {
+			zoom: 0.8;
+		}
+
+		#footer {
+			zoom: 0.8;
+		}
+
+		#header {
+			scale: 1;
+		}
+
+		#nav {
+			zoom: 0.8
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<div id="particles-js"></div>
+		<!-- Intro -->
+		<div id="intro">
+
+			<h1>Hi, Im Igal Kaminski</h1>
+			<p>I'm a software developer and a second year Computer Science Student </p>
+			<ul class="actions">
+				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
+
+		<!-- Header -->
+		<header id="header">
+			<a role="link" class="logo" aria-disabled="true">My portfolio</a>
+		</header>
+
+		<!-- Nav -->
+
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="./#main" id="projects-nav">Projects</a></li>
+				<li><a href="#footer" id="contact-nav">Contact Me</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/igal-kaminski" class="icon brands fa-linkedin"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/IgalKa" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+			<!-- Post -->
+			<section class="post featured">
+				<header class="major">
+					<div class="image main" id="logo"><img src="images/StepperLogo.png" alt="" /></div>
+					<p>Developed as part of Aviad Cohen's Java course at the Academic College of Tel-Aviv Yaffo.
+						<br><br>
+						The Stepper is a workflow\pipeline system that enables assembling different scenarios (called
+						flows) from common components (called steps), including executing them and producing required
+						results.
+					<ul class="actions special">
+						<li><a href="https://github.com/IgalKa/Stepper-Desktop" class="button large">Source code</a>
+						</li>
+					</ul>
+					</p>
+				</header>
+				<style>
+					/* Additional styles for consistent alignment */
+					#readme-content {
+						text-align: left;
+						/* Left-align the README content */
+						display: inline-block;
+						/* Allow centering with text-align: center */
+					}
+				</style>
+				<style>
+					/* Optional styles for the embedded GIF */
+					.gif-container {
+						max-width: 100%;
+						text-align: center;
+					}
+
+					.gif-container img {
+						max-width: 100%;
+						height: auto;
+					}
+				</style>
+				<div class="gif-container">
+					<div id="readme-content" class="raw"></div>
+					<p>
+						<script>
+							// Read the local README file
+							var readmePath = "Stepper readme.md";
+							fetch(readmePath)
+								.then(response => response.text())
+								.then(data => {
+									// Convert the Markdown content to HTML
+									var converter = new showdown.Converter();
+									var html = converter.makeHtml(data);
+
+									// Display the HTML content in the 'readme-content' div
+									var readmeContent = document.getElementById('readme-content');
+									readmeContent.innerHTML = html;
+								})
+								.catch(error => {
+									console.log("Error reading README:", error);
+								});
+						</script>
+
+						<!-- Include Showdown library for Markdown to HTML conversion -->
+						<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+					</p>
+				</div>
+			</section>
+
+
+			<!-- Footer -->
+		</div>
+
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h3>Email</h3>
+				<p><a href="mailto: igalkmi@gmail.com"">igalkmi@gmail.com</a></p>
+			</section>
+			<section>
+				<h3>Social</h3>
+				<ul class=" icons alt">
+						<li><a href="https://www.linkedin.com/in/igal-kaminski"
+								class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a>
+						</li>
+						<li><a href="https://github.com/IgalKa" class="icon brands alt fa-github"><span
+									class="label">GitHub</span></a></li>
+						</ul>
+			</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Igal Kaminski 2023 </li>
+				<li>Design: HTML5 UP</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/particles.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
